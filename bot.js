@@ -23,6 +23,27 @@ client.on('ready', () => {
 });
 
 
+
+
+  client.on('message' , function (message){
+      var token = 'NDc3NjUyMTE3ODcyNzA1NTM2.DlO4Mw.5hFye9Sfm3L-7PBYZ-N84n8CgWY'; // التوكن هنا بس
+      if(message.content === 'res') {
+if(message.author.id !== '355101114024329227') return message.reply('**الامر خاص بـ صاحب البوت وشكرا**');
+          client.destroy();
+          client.login(token) // لا تغيرها
+var time = 7200000;
+client.setInterval(function() {
+    client.destroy();
+    client.login(token) // لا تغيرها
+  }, time);
+}
+})
+
+
+
+
+
+
 const Sra7a = [
      'صراحه  |  صوتك حلوة؟',
      'صراحه  |  التقيت الناس مع وجوهين؟',
